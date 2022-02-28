@@ -13,8 +13,6 @@ module ShortStringPacker
                            .rjust(5, "0") }
               .reduce{ |r1,r2| r1 + r2 })
       .to_i(2)
-      .to_s
-      .to_i
   end
 
   ## Unpacks a Integer from pack() method into a short string
