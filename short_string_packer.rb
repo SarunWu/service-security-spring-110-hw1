@@ -26,7 +26,7 @@ module ShortStringPacker
   end
 end
 
-# First Attemp
+# First Attempt
 # Pack #
 # ("1" + str.split("")
 #           .map { |m| (m.ord - 96)
@@ -46,6 +46,6 @@ end
 # unpack  0.495524   0.004674   0.500198 (  0.501806)
 # -----------------------------------
 
-# Second(current) attemp
+# Second(current) Attempt
 # pack  0.151116   0.001523   0.152639 (  0.154351)
 # unpack  0.479838   0.003516   0.483354 (  0.483684)
