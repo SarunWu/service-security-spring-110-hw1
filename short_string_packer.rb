@@ -7,8 +7,8 @@ module ShortStringPacker
   #   str - String object
   # Returns: a Integer object
   def self.pack(str)
-    str.split('')
-       .map { |m| (m.ord - 96) }
+    str.bytes
+       .map { |m| m - 96 }
        .reduce { |r1, r2| r1 << 5 | r2 }
   end
 
